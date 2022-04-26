@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewreport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Humidity Prediction</title>
+  </head>
+  <body>
+    <!-- <h1>Project</h1> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e3f2fd;">
+      <a class="navbar-brand" href="/">Humidity Predictor</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        
+      </div>
+    </nav>
+
+    <div class='container'>
+      <h2 class="text-center mt-3">HUMIDITY PREDICTION</h2>
+      <form action="/" method="POST">
+
+        <div class="form-group">
+          <label for="Dist_id">Enter District Id</label>
+          <select class="form-control custom-select" name = "Dist_id" id="Dist_id">
+            <option value="1">ADILABAD-1</option>
+            <option value="11">KOMARAM BHEEM-11</option>
+            <option value="13">MANCHERIAL-13</option>
+            <option value="21">NIRMAL-21</option>
+            <option value="22">NIZAMABAD-22</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="Mandal_Code">Enter Mandal_code</label>
+          <select class="form-control custom-select" name = "Mandal_Code" id="Mandal_Code">
+            <option value="61">ADILABAD - BHEEMPOOR</option>
+            <option value="193">ADILABAD - JAINAD</option>
+            <option value="54">ADILABAD - BELA</option>
+            <option value="143">ADILABAD - GADIGUDA</option>
+            <option value="380">ADILABAD - NARNOOR</option>
+            <option value="187">ADILABAD - INDERAVELLY</option>
+            <option value="165">ADILABAD - GUDIHATHNUR</option>
+            <option value="6">ADILABAD - ADILABAD RURAL</option>
+            <option value="7">ADILABAD - ADILABAD URBAN</option>
+            <option value="327">ADILABAD - MAVALA</option>
+            <option value="512">ADILABAD - TAMSI</option>
+            <option value="511">ADILABAD - TALAMADUGU</option>
+            <option value="50">ADILABAD - BAZARHATHNOOR</option>
+            <option value="72">ADILABAD - BOATH</option>
+            <option value="398">ADILABAD - NERADIGONDA</option>
+            <option value="185">ADILABAD - ICHODA</option>
+            <option value="496">ADILABAD - SIRIKONDA</option>
+            <option value="194">KOMARAM BHEEM ASIFABAD - JAINOOR</option>
+            <option value="499">KOMARAM BHEEM ASIFABAD - SIRPUR_U</option>
+            <option value="284">KOMARAM BHEEM ASIFABAD - LINGAPUR</option>
+            <option value="535">KOMARAM BHEEM ASIFABAD - TIRYANI</option>
+            <option value="463">KOMARAM BHEEM ASIFABAD - REBBANA</option>
+            <option value="27">KOMARAM BHEEM ASIFABAD - ASIFABAD</option>
+            <option value="233">KOMARAM BHEEM ASIFABAD - KERAMERI</option>
+            <option value="565">KOMARAM BHEEM ASIFABAD - WANKDI</option>
+            <option value="208">KOMARAM BHEEM ASIFABAD - KAGAZNAG</option>
+            <option value="498">KOMARAM BHEEM ASIFABAD - SIRPUR_T</option>
+            <option value="269">KOMARAM BHEEM ASIFABAD - KOUTHALA</option>
+            <option value="100">KOMARAM BHEEM ASIFABAD - CHINTALA MANEPALLY</option>
+            <option value="53">KOMARAM BHEEM ASIFABAD - BEJJUR</option>
+            <option value="434">KOMARAM BHEEM ASIFABAD - PENCHIKAIPET</option>
+            <option value="110">KOMARAM BHEEM ASIFABAD - DAHEGAO</option>
+            <option value="200">MANCHERIAL - JANNARAM</option>
+            <option value="115">MANCHERIAL - DANDEPALLE</option>
+            <option value="286">MANCHERIAL - LUXETTIPET</option>
+            <option value="171">MANCHERIAL - HAJIPUR</option>
+            <option value="228">MANCHERIAL - KASIPET</option>
+            <option value="513">MANCHERIAL - TANDUR</option>
+            <option value="60">MANCHERIAL - BHEEMINI</option>
+            <option value="223">MANCHERIAL - KANNEPALLI</option>
+            <option value="555">MANCHERIAL - VEMANAPALLE</option>
+            <option value="397">MANCHERIAL - NENNAL</option>
+            <option value="55">MANCHERIAL - BELLAMPALLE</option>
+            <option value="313">MANCHERIAL - MANDAMARRI</option>
+            <option value="387">MANCHERIAL - NASPUR</option>
+            <option value="195">MANCHERIAL - JAIPUR</option>
+            <option value="63">MANCHERIAL - BHIMARAM</option>
+            <option value="88">MANCHERIAL - CHENNUR</option>
+            <option value="261">MANCHERIAL - KOTAPALLE</option>
+            <option value="272">NIRMAL - KUBEER</option>
+            <option value="516">NIRMAL - TANUR</option>
+            <option value="47">NIRMAL - BASAR</option>
+            <option value="346">NIRMAL - MUDHOLE</option>
+            <option value="57">NIRMAL - BHAINSA</option>
+            <option value="276">NIRMAL - KUNTALA</option>
+            <option value="383">NIRMAL - NARSAPUR_G</option>
+            <option value="285">NIRMAL - LOKESWARAM</option>
+            <option value="128">NIRMAL - DILAWARPUR</option>
+            <option value="475">NIRMAL - SARANGAPUR</option>
+            <option value="402">NIRMAL - NIRMAL</option>
+            <option value="403">NIRMAL - NIRMAL_RURAL</option>
+            <option value="501">NIRMAL - SOAN</option>
+            <option value="279">NIRMAL - LAXMANCHANDA</option>
+            <option value="309">NIRMAL - MAMDA</option>
+            <option value="433">NIRMAL - PEMBI</option>
+            <option value="240">NIRMAL - KHANAPUR</option>
+            <option value="206">NIRMAL - KADDAMPEDDUR</option>
+            <option value="117">NIRMAL - DASTUARABAD</option>
+            <option value="389">NIZAMABAD - NAVIPET</option>
+            <option value="372">NIZAMABAD - NANDIPET</option>
+            <option value="26">NIZAMABAD - ARMUR</option>
+            <option value="42">NIZAMABAD - BALKONDA</option>
+            <option value="355">NIZAMABAD - MUPKAL</option> 
+            <option value="332">NIZAMABAD - MENDORA</option>
+            <option value="332">NIZAMABAD - YERGATLA</option>
+            <option value="580">NIZAMABAD - KAMMARPALLE</option>
+            <option value="217">NIZAMABAD - MORTAD</option>
+            <option value="342">NIZAMABAD - VAILPUR</option>
+            <option value="545">NIZAMABAD - JAKRANPALLE</option>
+            <option value="197">NIZAMABAD - MAKLOOR</option> 
+            <option value="302">NIZAMABAD - NIZAMAB</option>
+            <option value="404">NIZAMABAD - NIZAMABAD_NORTH</option>
+            <option value="574">NIZAMABAD - YEDA_PALLE</option>
+            <option value="461">NIZAMABAD - RANJAL</option>
+            <option value="73">NIZAMABAD - BODHAN</option>
+            <option value="263">NIZAMABAD - KOTGIRI</option>
+            <option value="468">NIZAMABAD - RUDRUR</option> 
+            <option value="548">NIZAMABAD - VARNI</option>
+            <option value="405">NIZAMABAD - NIZAMABAD_RURAL</option>
+            <option value="406">NIZAMABAD - NIZAMABAD_SOUTH</option>
+            <option value="349">NIZAMABAD - MUGPAL</option>
+            <option value="127">NIZAMABAD - DICHPALLE</option>
+            <option value="186">NIZAMABAD - INDALWAI</option>
+            <option value="125">NIZAMABAD - DHARPALLE</option> 
+            <option value="59">NIZAMABAD - BHEEMGAL</option>
+            <option value="497">NIZAMABAD - SIRKONDA</option>
+            <option value="343">NIZAMABAD - MOSRA</option>
+            <option value="82">NIZAMABAD - CHANDUR</option>
+                       
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="Humidity_min">Enter Humidity_min</label>
+          <input type="text" class="form-control" id="Humidity_min" name="Humidity_min" placeholder="Enter Humidity_min">
+        </div>
+
+        <div class="form-group">
+          <label for="CropSeason_id">Enter Season</label>
+          <select class="form-control custom-select" name = "CropSeason_id" id="CropSeason_id">
+            <option value="1">rabi</option>
+            <option value="2">kharif</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="Temp_min">Enter Temperature_minimum</label>
+          <input type="text" class="form-control" id="Temp_min" name="Temp_min" placeholder="Enter temp_min">
+        </div>
+       
+
+
+        <div class="form-group">
+          <label for="Date_month">Enter Month</label>
+          <input type="text" class="form-control" id="Date_month" name="Date_month" placeholder="Enter Month">
+        </div>
+
+        <div class="form-group">
+          <label for="Rainfall">Enter Rainfall</label>
+          <input type="text" class="form-control" id="Rainfall" name="Rainfall" placeholder="Enter Rainfall">
+        </div>
+
+        
+        
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewreport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Crop Yeild Prediction</title>
+  </head>
+  <body>
+    <!-- <h1>Project</h1> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e3f2fd;">
+      <a class="navbar-brand" href="/">Yeild Predictor</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        
+      </div>
+    </nav>
+
+    <div class='container'>
+      <h2 class="text-center mt-3">CROP YEILD PREDICTION</h2>
+      <form action="/" method="POST">
+        <div class="form-group">
+          <label for="Crop">Enter Crop Name</label>
+          <input type="text" class="form-control" id="Crop" name="Crop" placeholder="crop">
+        </div>
+
+        
+
+        <div class="form-group">
+          <label for="Dist_id">Enter District </label>
+          <select class="form-control custom-select" name = "Dist_id" id="Dist_id">
+            <option value="1">ADILABAD</option>
+            <option value="2">BHADRADRI</option>
+            <option value="3">HYDERABAD</option>
+            <option value="4">JAGTIAL</option>
+            <option value="5">JANGAON</option>
+            <option value="6">JAYASHANKAR</option>
+            <option value="7">JOGULAMBA</option>
+            <option value="8">KAMAREDDY</option>
+            <option value="9">KARIMNAGAR</option>
+            <option value="10">KHAMMAM</option>
+            <option value="11">KOMARAM BHEEM</option>
+            <option value="12">MAHABUBNAGAR</option>
+            <option value="13">MANCHERIAL</option>
+            <option value="14">MEDAK</option>
+            <option value="15">MEDCHAL MALKAJ</option>
+            <option value="16">MAHABUBABAD</option>
+            <option value="18">NAGARKURNOOL</option>
+            <option value="19">NALAGONDA</option>
+            <option value="21">NIRMAL</option>
+            <option value="22">NIZAMABD</option>
+            <option value="23">PEDDAPALLI</option>
+            <option value="24">RAJANNA</option>
+            <option value="25">RANGAREDDY</option>
+            <option value="26">SANGAREDDY</option>
+            <option value="27">SIDDIPET</option>
+            <option value="28">SURYAPET</option>
+            <option value="29">VIKARABAD</option>
+            <option value="30">WANAPARTHY</option>
+            <option value="31">WARANGAL RURAL</option>
+            <option value="32">WARANGAL URBAN</option>
+            <option value="33">YADADRI</option>
+            
+
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="Year">Enter Year</label>
+          <input type="text" class="form-control" id="Year" name="Year" placeholder="Enter Year">
+        </div>
+
+        <div class="form-group">
+          <label for="Season">Enter Season</label>
+          <select class="form-control custom-select" name = "Season" id="Season">
+            <option value="1">kharif</option>
+            <option value="0">rabi</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="Season_yeild">Enter Season_yeild</label>
+          <input type="text" class="form-control" id="Season_yeild" name="Season_yeild" placeholder="Enter Season_yeild">
+        </div>
+        
+        <button class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
